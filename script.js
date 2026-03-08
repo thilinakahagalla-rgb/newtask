@@ -111,12 +111,7 @@ function addTask() {
     taskInput.value = '';
 }
 
-function saveAndSync() {
-    saveToLocalStorage();
-    if (binId) {
-        syncWithCloud();
-    }
-}
+
 
 function toggleTask(id) {
     tasks = tasks.map(task =>
